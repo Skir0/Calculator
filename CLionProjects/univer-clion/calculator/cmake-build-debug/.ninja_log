@@ -1,0 +1,12 @@
+# ninja log v6
+4	671	1733769849678033242	CMakeFiles/calculator.dir/main.cpp.o	645b7f278835a11a
+671	766	1733769850344490572	calculator	a7b1e7a81db16b3e
+0	491	1733770371894148067	CMakeFiles/calculator.dir/src/main.cpp.o	85c0c44a30bcf35e
+1	533	1733770371895504917	CMakeFiles/calculator.dir/src/Calculator.cpp.o	d66a813c26daab14
+533	642	1733770372426923304	calculator	cdf0d724bd35ccbc
+2	425	1733770494036946210	CMakeFiles/calculator.dir/src/main.cpp.o	85c0c44a30bcf35e
+2	479	1733770494037291579	CMakeFiles/calculator.dir/src/Calculator.cpp.o	d66a813c26daab14
+479	508	1733770494514372630	calculator	cdf0d724bd35ccbc
+2	423	1733770575321876188	CMakeFiles/calculator.dir/src/main.cpp.o	85c0c44a30bcf35e
+3	474	1733770575322209265	CMakeFiles/calculator.dir/src/Calculator.cpp.o	d66a813c26daab14
+474	503	1733770575793384901	calculator	cdf0d724bd35ccbc
