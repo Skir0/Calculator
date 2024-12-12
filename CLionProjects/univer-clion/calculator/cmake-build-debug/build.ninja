@@ -49,14 +49,14 @@ cmake_ninja_workdir = /Users/kirill_smychok/CLionProjects/univer-clion/calculato
 
 build cmake_object_order_depends_target_calculator: phony || .
 
-build CMakeFiles/calculator.dir/src/main.cpp.o: CXX_COMPILER__calculator_unscanned_Debug /Users/kirill_smychok/CLionProjects/univer-clion/calculator/src/main.cpp || cmake_object_order_depends_target_calculator
-  DEP_FILE = CMakeFiles/calculator.dir/src/main.cpp.o.d
+build CMakeFiles/calculator.dir/src/Calculator.cpp.o: CXX_COMPILER__calculator_unscanned_Debug /Users/kirill_smychok/CLionProjects/univer-clion/calculator/src/Calculator.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/src/Calculator.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/calculator.dir
   OBJECT_FILE_DIR = CMakeFiles/calculator.dir/src
 
-build CMakeFiles/calculator.dir/src/Calculator.cpp.o: CXX_COMPILER__calculator_unscanned_Debug /Users/kirill_smychok/CLionProjects/univer-clion/calculator/src/Calculator.cpp || cmake_object_order_depends_target_calculator
-  DEP_FILE = CMakeFiles/calculator.dir/src/Calculator.cpp.o.d
+build CMakeFiles/calculator.dir/src/main.cpp.o: CXX_COMPILER__calculator_unscanned_Debug /Users/kirill_smychok/CLionProjects/univer-clion/calculator/src/main.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/calculator.dir
   OBJECT_FILE_DIR = CMakeFiles/calculator.dir/src
@@ -69,7 +69,7 @@ build CMakeFiles/calculator.dir/src/Calculator.cpp.o: CXX_COMPILER__calculator_u
 #############################################
 # Link the executable calculator
 
-build calculator: CXX_EXECUTABLE_LINKER__calculator_Debug CMakeFiles/calculator.dir/src/main.cpp.o CMakeFiles/calculator.dir/src/Calculator.cpp.o
+build calculator: CXX_EXECUTABLE_LINKER__calculator_Debug CMakeFiles/calculator.dir/src/Calculator.cpp.o CMakeFiles/calculator.dir/src/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/calculator.dir
   POST_BUILD = :

@@ -51,6 +51,84 @@ public:
     }
 };
 
+// Инженерные команды
+class SqrtCommand : public Command {
+public:
+    double execute(double a, double) override {
+        return std::sqrt(a);
+    }
+};
 
+class SinCommand : public Command {
+public:
+    double execute(double a, double) override {
+        return std::sin(a);
+    }
+};
+
+class CosCommand : public Command {
+public:
+    double execute(double a, double) override {
+        return std::cos(a);
+    }
+};
+
+class TanCommand : public Command {
+public:
+    double execute(double a, double) override {
+        return std::tan(a);
+    }
+};
+
+class LogCommand : public Command {
+public:
+    double execute(double a, double) override {
+        if (a <= 0) throw std::invalid_argument("Логарифм определён только для положительных чисел");
+        return std::log(a);
+    }
+};
+
+class ExpCommand : public Command {
+public:
+    double execute(double a, double) override {
+        return std::exp(a);
+    }
+};
+
+// Битовые команды
+class BitwiseAndCommand : public Command {
+public:
+    double execute(double a, double b) override {
+        return static_cast<int>(a) & static_cast<int>(b);
+    }
+};
+
+class BitwiseOrCommand : public Command {
+public:
+    double execute(double a, double b) override {
+        return static_cast<int>(a) | static_cast<int>(b);
+    }
+};
+
+class BitwiseXorCommand : public Command {
+public:
+    double execute(double a, double b) override {
+        return static_cast<int>(a) ^ static_cast<int>(b);
+    }
+};
+
+class ShiftLeftCommand : public Command {
+public:
+    double execute(double a, double b) override {
+        return static_cast<int>(a) << static_cast<int>(b);
+    }
+};
+
+class ShiftRightCommand : public Command {
+public:
+    double execute(double a, double b) override {
+        return static_cast<int>(a) >> static_cast<int>(b);
+    }
+};
 
 #endif // COMMAND_H

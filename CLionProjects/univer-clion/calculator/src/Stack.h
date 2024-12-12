@@ -15,14 +15,14 @@ public:
 
     void pop() {
         if (elements.empty()) {
-            throw std::out_of_range("Стэк пуст");
+            throw std::out_of_range("Stack<>::pop(): empty stack");
         }
         elements.pop_back();
     }
 
     T top() const {
         if (elements.empty()) {
-            throw std::out_of_range("Стэк пуст");
+            throw std::out_of_range("Stack<>::top(): empty stack");
         }
         return elements.back();
     }
